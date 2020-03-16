@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/score/index",
+    "pages/favorite/index",
+    "pages/data/index",
+    "pages/more/index",
+    "pages/match_detail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#040508",
+    "backgroundColor": "#EBEEF2",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#F7F8FA",
+    "color": "#828A99",
+    "selectedColor": "#F73E3E",
+    "list": [
+      {
+        "pagePath": "pages/score/index",
+        "text": "Scores",
+        "iconPath": "/icons/tabbar/score0.png",
+        "selectedIconPath": "/icons/tabbar/score1.png"
+      },
+      {
+        "pagePath": "pages/favorite/index",
+        "text": "Favorites",
+        "iconPath": "/icons/tabbar/fav0.png",
+        "selectedIconPath": "/icons/tabbar/fav1.png"
+      },
+      {
+        "pagePath": "pages/data/index",
+        "text": "Data",
+        "iconPath": "/icons/tabbar/data0.png",
+        "selectedIconPath": "/icons/tabbar/data1.png"
+      },
+      {
+        "pagePath": "pages/more/index",
+        "text": "More",
+        "iconPath": "/icons/tabbar/more0.png",
+        "selectedIconPath": "/icons/tabbar/more1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

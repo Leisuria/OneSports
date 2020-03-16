@@ -1,0 +1,11 @@
+<jftabbar tabCate="{{tabCate}}" 
+          bindtabChange="handleTabChange" />
+
+          
+<view class="match_container">
+    <scroll-view scroll-y class="match_wrap">
+        <jmatchfo matchItem="{{matchItem}}"
+                  isFav="{{isFav}}" 
+                  bindaddMatch="handleAddMatch" />
+    </scroll-view>
+</view>

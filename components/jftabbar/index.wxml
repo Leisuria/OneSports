@@ -1,0 +1,10 @@
+<view class="tab_wrap">
+    <view class="tab_item {{item.isActive ? 'active' : ''}}"
+    wx:for="{{tabCate}}"
+    wx:key="id"
+    bindtap="handleItemTap"
+    data-index="{{index}}"
+    >
+    {{item.value}}
+    </view>
+</view>

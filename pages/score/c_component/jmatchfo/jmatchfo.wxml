@@ -1,0 +1,46 @@
+<view class="match_item_soccer"
+      wx:for="{{matchItem}}"
+      wx:key="id"
+      >
+        <view class="des_wrap">
+            <view class="left_des">
+                <view class="region">
+                    <view class="flag"> <image mode="aspectFill" src="{{item.region_flag}}" /> </view>
+                    <view class="region_name">{{item.region_name}}</view>
+                </view>
+                <view class="time">{{item.start_time}}</view>
+            </view>
+            <view class="status">{{item.status}}</view>
+            <view class="right_des">
+                <view wx:if="{{item.lineup=='1'}}" class="lineup">
+                    <image src="/icons/match/lineup.png"/>
+                </view>
+                <view wx:elif="{{item.lineup!='1'}}"class="lineup"></view>
+                <view class="audience">
+                    <image src="/icons/match/audience.png" />
+                    <text>{{item.audience}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="team_wrap">
+            <view data-index="{{index}}" bindtap="handleFavAdd" class="match_fav"><image wx:if="{{item.way=='0' || item.way=='1'}}" src="{{item.fav?'/icons/match/fav1.png':'/icons/match/fav0.png'}}" /></view>
+            <navigator url="/pages/match_detail/index?id={{item.match_id}}" class="main_content">
+                <view class="team away_team">{{item.away_team}}</view>
+                <view wx:if="{{item.way=='0'}}" class="match_score">v</view>
+                <view wx:elif="{{item.way=='1' || item.way=='2'}}" class="live_score">{{item.a_score}} - {{item.h_score}}</view>
+                <view class="team home_team">{{item.home_team}}</view>
+            </navigator>
+            <view wx:if="{{item.live=='1'}}" class="live"><image src="/icons/states/live.png" /></view>
+            <view wx:elif="{{item.live=='2'}}" class="live"><image src="/icons/states/animation.png" /></view>
+            <view wx:elif="{{item.live=='3'}}" class="live"><image src="/icons/states/matchdata.png" /></view>
+            <view wx:elif="{{item.live=='0'}}" class="live"></view>
+        </view>
+        <view wx:if="{{item.way=='1' || item.way=='2'}}" class="detail_wrap">
+            <view class="detail_content">
+                <view class="detail_item">HT {{item.detail.ht}}</view>
+                <view class="detail_item">
+                    <image src="/icons/match/corner.png" /> {{item.detail.corner}}
+                </view>
+            </view>
+        </view>
+</view>

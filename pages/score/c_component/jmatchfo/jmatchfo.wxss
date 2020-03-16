@@ -1,0 +1,168 @@
+.match_item_soccer {
+  background-color: var(--boxColor);
+  padding: 8rpx 0;
+  border-radius: 8rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rpx;
+  height: 132rpx;
+}
+.match_item_soccer .des_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 0 8rpx;
+  font-size: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondText);
+}
+.match_item_soccer .des_wrap .left_des {
+  flex: 7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.match_item_soccer .des_wrap .left_des .region {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.match_item_soccer .des_wrap .left_des .region .flag {
+  margin-right: 8rpx;
+}
+.match_item_soccer .des_wrap .left_des .region .flag image {
+  width: 30rpx;
+  height: 20rpx;
+}
+.match_item_soccer .des_wrap .left_des .region .region_name {
+  vertical-align: middle;
+}
+.match_item_soccer .des_wrap .status {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--themeColor);
+  padding: 0 8rpx;
+}
+.match_item_soccer .des_wrap .right_des {
+  flex: 7;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.match_item_soccer .des_wrap .right_des .lineup {
+  flex: 7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.match_item_soccer .des_wrap .right_des .lineup image {
+  width: 28rpx;
+  height: 28rpx;
+}
+.match_item_soccer .des_wrap .right_des .audience {
+  flex: 4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.match_item_soccer .des_wrap .right_des .audience image {
+  margin-left: 8rpx;
+  margin-right: 4rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+.match_item_soccer .team_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 8rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.match_item_soccer .team_wrap .match_fav {
+  flex: 1;
+}
+.match_item_soccer .team_wrap .match_fav image {
+  float: left;
+  width: 28rpx;
+  height: 28rpx;
+}
+.match_item_soccer .team_wrap .main_content {
+  flex: 14;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+.match_item_soccer .team_wrap .main_content .team {
+  color: var(--firstText);
+  font-weight: 1000;
+  flex: 8;
+}
+.match_item_soccer .team_wrap .main_content .away_team {
+  display: flex;
+  justify-content: flex-end;
+}
+.match_item_soccer .team_wrap .main_content .home_team {
+  display: flex;
+  justify-content: flex-start;
+}
+.match_item_soccer .team_wrap .main_content .match_score {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondText);
+  font-weight: 1000;
+  margin: 0 8rpx;
+}
+.match_item_soccer .team_wrap .main_content .live_score {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--themeColor);
+  font-weight: 1000;
+  margin: 0 8rpx;
+}
+.match_item_soccer .team_wrap .live {
+  flex: 1;
+}
+.match_item_soccer .team_wrap .live image {
+  float: right;
+  width: 24rpx;
+  height: 24rpx;
+}
+.match_item_soccer .detail_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 4rpx 8rpx 0rpx 8rpx;
+  justify-content: center;
+  align-items: center;
+}
+.match_item_soccer .detail_wrap .detail_content {
+  background-color: var(--bottomColor);
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  padding: 4rpx 16rpx;
+  color: var(--secondText);
+  display: flex;
+  justify-content: space-between;
+}
+.match_item_soccer .detail_wrap .detail_content .detail_item {
+  margin-right: 24rpx;
+}
+.match_item_soccer .detail_wrap .detail_content .detail_item image {
+  margin-right: 2rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+.match_item_soccer .detail_wrap .detail_content .detail_item:last-child {
+  margin-right: 0;
+}

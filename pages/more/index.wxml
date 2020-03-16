@@ -1,0 +1,92 @@
+<view class="user_wrap">
+    <view class="user_info" wx:if="{{userinfo.nickName}}">
+        <view class="avatar" ><image mode="aspectFill" src="{{userinfo.avatarUrl}}" /></view>
+        <view class="user_name">
+            <view class="name">{{userinfo.nickName}}</view>
+            <view class="level">LV.7</view>
+        </view>
+    </view>
+    <view class="user_info" wx:else>
+        <view class="avatar" ><image mode="aspectFill" src="/images/more/me.png" /></view>
+        <view class="login">
+            <button bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo" class="signin">Sign in</button>
+            <view class="login_des">To keep all your favorites in sync across all your devices</view>
+        </view>
+    </view>
+    
+</view>
+
+<view class="setting_container">
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/tz.png" /></view>
+            <view class="item_name">Notification Settings</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/jqtx.png" /></view>
+            <view class="item_name">Score Reminder</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/yy.png" /></view>
+            <view class="item_name">Change Language</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/yj.png" /></view>
+            <view class="item_name">Dark Mode</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_b"><image src="/icons/setting/btn0.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/fkyj.png" /></view>
+            <view class="item_name">Send us feedback</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/fx.png" /></view>
+            <view class="item_name">Share OneSports</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/pj.png" /></view>
+            <view class="item_name">Rate on APP Store</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+    <view class="setting_item">
+        <view class="left_wrap">
+            <view class="item_icon"><image src="/icons/setting/sj.png" /></view>
+            <view class="item_name">About OneSports</view>
+        </view>
+        <view class="right_wrap">
+            <view class="item_operate type_a"><image src="/icons/setting/enter.png" /></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "jftabbar": "/components/jftabbar/index"
+  },
+  "navigationBarTitleText": "Favorites"
+}

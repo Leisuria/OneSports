@@ -1,0 +1,9 @@
+<jftabbar tabCate="{{tabCate}}" 
+          bindtabChange="handleTabChange" />
+
+<view class="fav_wrap">
+    <view class="nofav_wrap">
+        <image mode="widthFix" src="/images/null.png" />
+        <view class="space">No favorites added</view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+page{
+    background-color: var(--bgColor);
+}
+
+.tab_wrap{
+    display: flex;
+    flex-direction: row;
+    height: 72rpx;
+    background-color: var(--topBgColor);
+    .tab_item{
+        flex: 1;
+        display: flex;
+        font-size: 24rpx;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, .6)
+    }
+    .active{
+        color: rgba(255, 255, 255, 1);
+        font-weight: bold;
+        border-bottom: 4rpx solid var(--themeColor);
+    }
+}

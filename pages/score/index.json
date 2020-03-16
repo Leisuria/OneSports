@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "jftabbar": "/components/jftabbar/index",
+    "jmatchfo": "../score/c_component/jmatchfo/jmatchfo"
+  },
+  "navigationBarTitleText": "Scores"
+}

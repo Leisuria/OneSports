@@ -1,0 +1,21 @@
+page,view,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 颜色定义 */
+page{
+  --themeColor:#F73E3E;
+  --topBgColor:#040508;
+  --bgColor:#EBEEF2;
+  --lineColor:#E6E7EB;
+  --oddsColor:#FC860F;
+  --boxColor:#FFFFFF;
+  --bottomColor: #F7F8FA;
+
+  --firstText:#040508;
+  --secondText:#828A99;
+  
+
+}

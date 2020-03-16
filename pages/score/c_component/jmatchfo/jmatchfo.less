@@ -1,0 +1,169 @@
+
+    .match_item_soccer{
+        background-color: var(--boxColor);
+        padding: 8rpx 0;
+        border-radius: 8rpx;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rpx;
+        height: 132rpx;
+        .des_wrap{
+            display: flex;
+            flex-direction: row;
+            padding: 0 8rpx;
+            font-size: 20rpx;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--secondText);
+            .left_des{
+                flex: 7;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .region{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .flag{
+                        margin-right: 8rpx;
+                        image{
+                            width: 30rpx;
+                            height: 20rpx;
+                        }
+                    }
+                    .region_name{
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .status{
+                flex: 4;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: var(--themeColor);
+                padding: 0 8rpx;
+            }
+            .right_des{
+                flex: 7;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                .lineup{
+                    flex: 7;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    image{
+                        width: 28rpx;
+                        height: 28rpx;
+                    }   
+                }
+                .audience{
+                    flex: 4;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    image{
+                        margin-left: 8rpx;
+                        margin-right: 4rpx;
+                        width: 28rpx;
+                        height: 28rpx;
+                    }
+                }
+            }
+        }
+        .team_wrap{
+            display: flex;
+            flex-direction: row;
+            padding: 8rpx;
+            justify-content: space-between;
+            align-items: center;
+            .match_fav{
+                flex: 1;
+                image{
+                    float: left;
+                    width: 28rpx;
+                    height: 28rpx;
+                }
+            }
+            .main_content{
+                flex: 14;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 24rpx;
+                .team{
+                    color: var(--firstText);
+                    font-weight: 1000;
+                    flex: 8;
+                }
+                .away_team{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .home_team{
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                .match_score{
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--secondText);
+                    font-weight: 1000;
+                    margin: 0 8rpx;
+                }
+                .live_score{
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--themeColor);
+                    font-weight: 1000;
+                    margin: 0 8rpx;
+                }
+            }
+            .live{
+                flex: 1;
+                image{
+                    float: right;
+                    width: 24rpx;
+                    height: 24rpx;
+                }
+            }
+        }
+        .detail_wrap{
+            display: flex;
+            flex-direction: row;
+            padding: 4rpx 8rpx 0rpx 8rpx;
+            justify-content: center;
+            align-items: center;
+            .detail_content{
+                background-color: var(--bottomColor);
+                border-radius: 20rpx;
+                font-size: 20rpx;
+                padding: 4rpx 16rpx;
+                color: var(--secondText);
+                display: flex;
+                justify-content: space-between;
+                .detail_item{
+                    margin-right: 24rpx;
+                    image{
+                        margin-right: 2rpx;
+                        width: 20rpx;
+                        height: 20rpx;
+                    }
+                }
+                .detail_item:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
