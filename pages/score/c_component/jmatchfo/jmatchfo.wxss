@@ -31,6 +31,7 @@
 }
 .match_item_soccer .des_wrap .left_des .region .flag {
   margin-right: 8rpx;
+  overflow: hidden;
 }
 .match_item_soccer .des_wrap .left_des .region .flag image {
   width: 30rpx;

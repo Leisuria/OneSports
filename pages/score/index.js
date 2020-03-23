@@ -45,20 +45,13 @@ Page({
         },
         fav:false,
       }
-    ],
-
-    isCollect: false,
+    ]
   },
 
-  onLoad: function () {
+  onShow: function () {
     this.setData({
       matchItem: soccer.matchlist
     })
-   /*  let collect = wx.getStorageSync("collect") || [] 
-    let isCollect = collect.some(v=>v.match_id ===this.data.matchItem.match_id)
-    this.setData({
-      isCollect
-    }) */
   },
 
   // 导航点击事件 从子组件传递
@@ -76,29 +69,36 @@ Page({
 
   // 添加收藏比赛
   handleAddMatch(e){
-    console.log("添加比赛")
-    let isCollect = false
-    let match = this.data.matchItem
+    const {index} = e.detail
+    let matchItem = this.data.matchItem
+    let match = matchItem[index]
     // 1.获取缓存中的收藏数组
     let collect = wx.getStorageSync('collect') || []
     // 2.判断比赛是否被收藏过
-    let index = collect.findIndex(v=>v.match_id === match.match_id)
-    if(index !== -1) {
+    let findIndex = collect.findIndex(v=>v.match_id === match.match_id)
+    if(findIndex !== -1) {
       // 能找到 已经收藏过该场比赛   在数组中删除该场比赛
       collect.splice(index,1)
-      isCollect = false
-      console.log("哈喽")
+      match.fav = false
+      wx.showToast({
+        title: '取消收藏',
+        icon: 'none',
+        mask: true
+      })
     }else{
       // 没有收藏过
-      collect.push(match[index])
-      isCollect=true
+      match.fav = true
+      collect.push(match)
+      wx.showToast({
+        title: '收藏成功',
+        icon: 'success',
+        mask: true
+      })
     }
     // 3.把数组存入到缓存中
     wx.setStorageSync('collect', collect)
-    // 4.修改一下data当中的属性 isFav
     this.setData({
-      isCollect: match[index].fav
+      matchItem
     })
-
   }
 })

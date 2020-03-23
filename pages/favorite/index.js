@@ -22,14 +22,19 @@ Page({
         isActive: false
       }
     ],
+    collect:[]
 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    
+  onShow: function (options) {
+    const collect = wx.getStorageSync("collect")||[]
+    this.setData({
+      collect
+    })
+
   },
 
   // 一级tab点击事件
@@ -43,6 +48,25 @@ Page({
     // 3. 赋值到data中
     this.setData({tabCate})
   },
+
+  // 点击收藏
+  handleCancelMatch(e){
+    const {index} = e.detail
+    let collect = this.data.collect
+    collect[index].fav=false
+    collect.splice(index,1)
+    
+    wx.showToast({
+      title: '取消收藏',
+      icon: 'none',
+      mask: true
+    })
+    wx.setStorageSync('collect', collect)
+    // 4.修改一下data当中的属性 isFav
+    this.setData({
+      collect
+    })
+  }
 
 
 })

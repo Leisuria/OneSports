@@ -2,8 +2,14 @@
           bindtabChange="handleTabChange" />
 
 <view class="fav_wrap">
-    <view class="nofav_wrap">
+    <view wx:if="{{collect.length===0}}" class="nofav_wrap">
         <image mode="widthFix" src="/images/null.png" />
         <view class="space">No favorites added</view>
+    </view>
+    <view wx:else class="match_container">
+        <scroll-view scroll-y class="match_wrap">
+            <jmatchfo matchItem="{{collect}}"
+                      bindaddMatch="handleCancelMatch" />
+        </scroll-view>
     </view>
 </view>
